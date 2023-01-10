@@ -1,0 +1,422 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --dark-yellow: rgb(251 191 36);
+    --dark-green: rgb(19 78 74);
+    --light-yellow:  rgb(253 224 71);
+    --light-green: rgb(17 94 89);
+    
+}
+
+a, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navi {
+    line-height: 1.2em;
+        color:#0000;
+    text-shadow: 
+      0 0 var(--dark-yellow), 
+      0 1.2em #0000;
+    overflow: hidden;
+    transition: all .5s ease-in-out; 
+}
+.navi:hover {
+    transform: scale(1.3); 
+    cursor: pointer;
+    text-shadow: 
+    0 -1.2em #0000, 
+    0 0 white;
+    
+}
+.first_flex {
+    background: var(--dark-yellow);
+    display: flex;
+    flex-direction:column;
+    height: 600px;
+}
+.Header {
+    display: flex;
+    position: fixed;
+    flex-direction:row; 
+    height: 75px;
+    align-items: center;
+    width: 100%;
+    background-color: var(--dark-green);
+}
+.Logo {
+    font-size: 24px;
+    color: white;
+    font-family: "Audiowide", sans-serif;
+    padding-left:24px; 
+    transition: all .5s ease-in-out; 
+}
+ .Logo:hover {
+    transform: scale(0.8); 
+    text-shadow: 0 5px 15px var(--dark-yellow);
+    cursor: not-allowed;
+}
+.Header_Links {
+    margin-left:auto;
+    padding-right: 25px;
+}
+.Header_Links li {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+   
+    padding: 24px;
+    display: inline-block;
+   
+}
+.Intro-Body {
+    display: flex; 
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding: 25px;
+}
+.Column-Text{
+    display: flex;
+    flex-direction:column;
+    width: 50%;
+}
+.Main-Text {
+    font-size:48px;
+    color:white;
+    font-family: "Audiowide", sans-serif;
+    float: left;
+    padding-left: 24px;
+    padding-bottom: 12px;
+
+    line-height: 1.2em;
+        color:#0000;
+    text-shadow: 
+      0 0 white, 
+      0 1.2em #0000;
+    overflow: hidden;
+    transition: all .5s ease-in-out; 
+}
+.Main-Text:hover {
+    
+    cursor: not-allowed;
+    text-shadow: 
+    0 -1.2em #0000, 
+    0 0 var(--dark-green);
+}
+.Secondary-Text {
+    font-size: 20px;
+    color: var(--light-green);
+    padding-left: 24px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    font-weight: bold;
+    padding-top: 15px;
+}
+.Button {
+    
+    background-color: #3882f6;
+    color: white;
+    font-family: "Audiowide", sans-serif;
+    margin-top: 8px;
+    margin-left: 24px;
+    padding: 3px 6px;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    opacity: 0.9;
+    display: block;
+    border-radius: 15px 15px 15px 15px;
+   
+}
+.Button:hover {
+    background-color: green;
+    color: red;
+    opacity: 1;
+}
+.image-placeholder {
+    
+    align-self: center;
+    background-color: #eee;
+    height:445px;
+    width:397px;
+    
+    
+}
+.selfie {
+    transition: all .5s ease-in-out; 
+}
+.selfie:hover {
+    transform: scale(1.4); 
+    cursor: not-allowed;
+}
+.image-placeholder > img {
+    max-height: 100%;
+    max-width: 100%;
+}
+.icon-caption {
+    
+        font-size: 20px;
+        color: white;
+        padding-left: 24px;
+        font-family: 'Roboto', sans-serif;
+        display: flex;
+        font-weight: bold;
+        padding-top: 15px;
+        text-shadow: 0 0 15px var(--dark-green); 
+
+}
+figcaption {
+    color: var(--light-green);
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+} 
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.icon-container {
+    display: flex;
+    color: white;
+     padding-left: 24px;
+    padding-top: 25px; 
+    justify-content: flex-start;
+    font-size: 30px;
+    gap: 20px;
+}
+.fa-brands, .fa-solid {
+   
+    text-shadow: 0 0 15px var(--dark-green); 
+}
+.fa-linkedin:hover, .fa-r:hover {
+    text-shadow: none; 
+    cursor: pointer;
+    animation-name: counterspin;
+    animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.fa-github:hover, .fa-instagram:hover {
+    text-shadow: none; 
+    cursor: pointer;
+    animation-name: spin;
+    animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+ }
+ @keyframes counterspin {
+    0% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+ }
+.second-flex {
+    padding-left: 60px;
+    padding-right: 60px;
+    display: flex;
+    flex-direction:column;
+    
+    background-color: var(--light-green);
+    justify-content: center;
+    align-items: center;
+}
+.Title-Card {
+    padding-bottom: 50px;
+    font-size: 56px;
+    color: var(--light-yellow);
+    font-weight: bold;
+    font-family: "Audiowide", sans-serif;
+    align-self:center;
+}
+
+.Panel-Container {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    column-gap: 1rem;
+
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.Box {
+    display: flex;
+    border: 4px solid var(--light-yellow);
+    height: 300px;
+    width: 300px;
+    text-align:center;
+    border-radius: 15px 15px 15px 15px;
+}
+.sc {
+    max-width: 100%;
+        max-height: 100%;
+        display: block;
+        border-radius: 15px 15px 15px 15px;
+        transition: all .5s ease-in-out; 
+}
+.sc:hover {
+    transform: scale(1.4); 
+   
+}
+.text-caption {
+    color: white;
+    text-align: center;
+    font-family: "Audiowide", sans-serif;
+    padding-top: 15px;
+    padding-left: 25px;
+    padding-right:25px;
+    font-weight: bold;
+    font-size: 24px;
+}
+.description {
+    color: white;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+   padding: 15px;
+    font-size: 14px;
+
+    line-height: 1.2em;
+        color:#0000;
+    text-shadow: 
+      0 0 white, 
+      0 1.2em #0000;
+    overflow: hidden;
+    transition: all .5s ease-in-out; 
+
+}
+.description:hover {
+    transform: scale(1.2); 
+    font-weight: bold;
+    text-shadow: 
+    0 -1.2em #0000, 
+    0 0 var(--light-yellow);
+}
+
+.Third-Flex {
+    background-color:lightgray;
+    padding-left: 60px;
+    padding-right: 60px;
+    display: flex;
+    flex-direction:column;
+    
+    justify-content: center;
+    align-items: center;
+}
+.Quote-Text {
+    font-size: 36px;
+    font-style:  italic;
+    font-family: 'Roboto', sans-serif;
+    color: #1F2937
+}
+.SubQuote-Text {
+    font-size: 22px;
+    margin-left: auto;
+    font-family: "Audiowide", sans-serif;
+    
+}
+.fourth-flex {
+    background-color:white;
+    padding-left: 60px;
+    padding-right: 60px;
+    display: flex;
+    
+    
+    justify-content: center;
+    align-items: center;
+}
+.Banner {
+    display: flex;
+    justify-content:space-around;
+    
+    padding: 50px;
+    width: 100%;
+    background-color: #3882f6;
+    border-radius: 15px 15px 15px 15px;
+
+}
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    justify-content: space-evenly;
+    
+}
+.MainBanner-Text {
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    font-family: "Audiowide", sans-serif;
+
+
+}
+.SubBanner-Text {
+    font-size: 35px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+
+}
+.Button-Container {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    align-content: space-evenly;
+    
+    
+}
+.Border {
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    border-color: #eee;
+    margin-top: 24px;
+    margin-left: 24px;
+    padding: 12px 18px;
+    
+}
+.Border:hover {
+    background-color: green;
+    color: red;
+    opacity: 1;
+}
+.last-flex {
+    background: #1F2937;
+    padding-left: 60px;
+    padding-right: 60px;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+}
+.footer-text {
+    color:white;
+    font-size: 24px;
+}
+
+@media (max-width: 1000px) {
+    :root {
+        --dark-yellow: #FFD447;
+    --dark-green: #115e59;
+    --light-yellow:  #FFBFB7;
+    --light-green: #0d9488;
+      }
+}
